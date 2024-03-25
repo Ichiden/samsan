@@ -29,6 +29,7 @@ app.post('/sample',async(req,res,next) => {
         .request(options)
         .then(function (response) {
           console.log(response.data);
+            res.json(response.data);
         })
         .catch(function (error) {
           console.error(error);
